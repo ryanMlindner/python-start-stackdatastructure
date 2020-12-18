@@ -3,12 +3,7 @@ class stack:
    def __init__(self):
       self.storage = list()
 
-##      list = list()
-##      fill(data)
-##   def fill(*data):
-##      while bool(data):
-##         list.append(data[0])
-##         del data[0]
+## TODO make functs return vars
 
    def peek(self):
       print("top item: \"" + self.storage[-1] + "\"")
@@ -29,9 +24,8 @@ class stack:
 done = 0
 dataStack = stack()
 
-## TODOing make enter data its own input, and null for other commands,
-## otherwise you cant store the commands as data
-## done
+## TODO make functions in stack return variables
+## to make them testable easier
 
 while not(bool(done)):
    userData = input("use pop, peek, isEmpty, exit, or use push for data input:")
