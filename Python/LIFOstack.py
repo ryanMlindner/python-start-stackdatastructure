@@ -6,7 +6,10 @@ class stack:
 ## TODO make functs return vars
 
    def peek(self):
-      print("top item: \"" + self.storage[-1] + "\"")
+      if self.storage:
+         print("top item: \"" + self.storage[-1] + "\"")
+      else:
+         print("cannot peek, stack is empty")
 
    def pop(self):
       if self.storage:
