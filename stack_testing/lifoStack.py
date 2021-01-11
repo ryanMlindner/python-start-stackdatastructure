@@ -64,4 +64,4 @@ if __name__ == '__main__' :
       elif userData == "exit":
          done = 1  
 
-exit()
+##exit()

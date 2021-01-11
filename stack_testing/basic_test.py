@@ -1,3 +1,6 @@
+import sys
+
+print (sys.path)
 import unittest
 import hello
 ## VScode says this import does not work, but then the calls below
@@ -13,7 +16,7 @@ class testSuite(unittest.TestCase):
         ##i dont understand at all
         self.assertEqual(hello.hi, 'hi')
     def test_not_hi(self):
-        self.assertNotEqual(hello.hi, 'hi')
+        self.assertNotEqual(hello.hi, 0)
 
 if __name__ == '__main__':
     print('testing')
